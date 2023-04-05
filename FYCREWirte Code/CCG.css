@@ -1,0 +1,17 @@
+#cookie {
+    width: 200px;
+    height: 200px;
+    background-image: url('cookie.png');
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  #counter {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 18px;
+    margin-top: 20px;
+  }
