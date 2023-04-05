@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--Cén fáth a bhfuil tú ag féachaint? b'fhéidir toisc nach bhfuil tú in ann labhairt faigh an slí amach muinín dom ní féidir liom a rá go raibh ach tá siad ann-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>xNí féidir(0.3) a rá3 .html?</title>
+
+
+
+
+
+
+
+
+<center><h1>Click?</h1></center>
+
+
+<html>
+<head>
+	<div id="bg"></div>
+	<link rel="stylesheet" type="text/css" href="Void.css">
+    <style>
+		.photo img {
+			width: 350px;
+			height: 600px;
+			transition: transform 5s linear;
+		}
+
+		.photo img:hover {
+			transform: scale(1.1);
+		}
+	</style>
+	<script>
+		window.onload = function() {
+			var audioPlayed = false;
+			var audio = new Audio("Void.mp3"); // Replace "my-audio-file.mp3" with the path to your audio file
+			audio.loop = true;
+
+			var images = document.querySelectorAll('.photo img');
+			var scale = 1;
+
+			setInterval(function() {
+				scale = scale === 1 ? 1.1 : 1;
+				images.forEach(function(image) {
+					image.style.transform = 'scale(' + scale + ')';
+				});
+			}, 5000);
+
+			document.addEventListener("click", playAudio);
+			document.addEventListener("keydown", playAudio);
+
+			function playAudio() {
+				if (!audioPlayed) {
+					audio.play();
+					audioPlayed = true;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<center><h1>Tá an folús aimsithe agat arbh fhiú é?</h1></center>
+</body>
+</html>
